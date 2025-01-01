@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Tracking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script src="/new-order-tracking.js"></script>
+  </head>
+  <body>
+    <div
+      class="flex flex-col md:flex-row justify-around h-screen items-center"
+    >
+      <div
+        id="track-input"
+        class="border p-5 border-gray-300 w-4/5 mx-auto md:w-2/5 rounded-lg text-lg mb-2"
+      >
+        <p
+          class="md:ms-6 my-2 font-semibold text-center md:text-start text-gray-700"
+        >
+          Track Order
+        </p>
+        <form
+          id="trackForm"
+          action=""
+          class="flex flex-col md:flex-row md:justify-around placeholder:text-gray-300"
+        >
+          <input
+            class="px-2 md:w-3/5 w-full py-4 rounded-lg bg-transparent border border-gray-300 my-4 md:my-0 text-center md:text-left"
+            type="number"
+            name="phoneNo"
+            validation="false"
+            id="phone"
+            placeholder="Your phone number "
+          />
+          <button
+            class="px-6 rounded-lg py-4 hover:bg-gray-200 hover:text-black text-white font-semibold bg-black transition duration-300"
+            type="submit"
+          >
+            Track Order
+          </button>
+        </form>
+        <p
+          id="processText"
+          class="text-gray-300 font-sans text-sm text-center py-2 mt-2"
+        >
+          &nbsp;
+        </p>
+      </div>
+
+      <div id="trackData" class="w-4/5 md:w-1/2">
+
+        <div id="data-1" class="w-full md:w-4/5 mx-auto">
+          <img
+            src="https://res.cloudinary.com/dw3wmxotb/image/upload/v1735649140/6647729_jt095l.jpg"
+            class="border-0 w-full h-full"
+            alt=""
+          />
+        </div>
+
+        <div id="data-2" class="w-full md:h-screen md:mt-20 hidden"></div>
+
+      </div>
+    </div>
+</body>
+</html>
